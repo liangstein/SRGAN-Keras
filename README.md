@@ -9,7 +9,7 @@ Super-Resolution GAN was firstly raised in the [paper](https://arxiv.org/pdf/160
 
 We use cifar10 dataset (only 32x32 pixels) because training is easier with small dimensional datasets. The generator tries to generate enlarged images as the input images are resized to 16x16 by BICUBIC method. The discriminator tries to distinguish generated images from raw images. The discriminator is trained by a larger learning rate, hence the discriminator is always better trained than the generator. After training for 80 epochs, the generator can generate scaled image with a high quality. Since our dataset is small, the training time is short and 80 epochs is enough. 
 
-Some comparisons between the generated images and the NEAREST-resized images are presented below 
+Some comparisons between the generated images and the NEAREST-resized images are presented below. Raw images are on left column, GAN generated images are on middle column and NEAREST-resized images are on right column.
 <p align="center">
   <img src="https://github.com/liangstein/SRGAN-Keras/blob/master/comparison.png" width="350"/>
 </p>
